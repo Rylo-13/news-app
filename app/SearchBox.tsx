@@ -11,7 +11,7 @@ function SearchBox() {
     e.preventDefault();
     if (!input) return;
 
-    router.push(` /search?terms=${input}`);
+    router.push(` /search?term=${input}`);
   };
 
   return (
@@ -24,13 +24,13 @@ function SearchBox() {
         value={input}
         onChange={(e) => setInput(e.target.value)}
         placeholder="Search Keywords..."
-        className="w-full h-14 rounded-sm placeholder-gray-500 outline-none flex-1 bg-transparent dark:text-orange-500"
+        className="w-full h-14 rounded-sm placeholder-gray-500 outline-none flex-1 bg-transparent text-yellow-500"
       />
 
       <button
         type="submit"
         disabled={!input}
-        className="text-orange-500 disabled:text-gray-400"
+        className="text-yellow-500 disabled:text-gray-400"
       >
         Search
       </button>
