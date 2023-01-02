@@ -1,4 +1,3 @@
-import { JsonRpcBatchProvider } from "@ethersproject/providers";
 import { gql } from "graphql-request";
 import sortNewsByImage from "./sortNewsByImage";
 
